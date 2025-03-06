@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvj0t88p36grm"]
+
+[ext_resource type="Texture2D" uid="uid://c4amp3pdybjsj" path="res://image/icon.svg" id="1_4piot"]
+[ext_resource type="Script" uid="uid://csyod36um7851" path="res://scene/GameController.gd" id="1_cya13"]
+
+[node name="master_scene" type="Node2D"]
+script = ExtResource("1_cya13")
+idade = 99
+altura = 50.0
+minhaImagem = ExtResource("1_4piot")
+minhaCor = Color(0, 0.573786, 0.67238, 1)
+posicao = Vector2(100, 200)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0.560784, 1, 1)
+self_modulate = Color(0.725374, 0.971055, 0.387269, 1)
+show_behind_parent = true
+position = Vector2(310, 240)
+texture = ExtResource("1_4piot")
